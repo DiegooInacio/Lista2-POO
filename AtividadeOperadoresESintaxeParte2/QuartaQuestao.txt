@@ -1,0 +1,4 @@
+4. “Uma String é imutável”. Explique o significado desta afirmação e as razões que levaram a este
+comportamento.
+
+O	Java cria um pool	de Strings para usá-lo como	cache. Se a String não fosse imutável, mudando o valor de	uma	String,	afetaria todas as String s de outras classes que tivessem o	mesmo	valor. Assim, quando criamos uma string concatenando com outra, por exemplo, não estamos mudando aquela string que já existia, estamos apenas mudando o seu diretório para a string que foi criada.

@@ -1,0 +1,34 @@
+2. Sobre tipos de variáveis na linguagem Java, faça o que se pede:
+a. Quais os tipos de variáveis da linguagem Java?
+b. Quais as diferenças entre estes tipos?
+c. Crie um código-fonte simplificado demonstrando a diferença entre as variáveis de classe e
+de objeto (instância)
+
+a. Java possui diferentes tipos de variáveis, que podem ser classificados em três categorias principais:
+Variáveis primitivas: Armazenam valores diretos na memória. Exemplos incluem int, double, boolean, char, etc.
+Variáveis de referência (ou objetos): Armazenam referências a objetos na memória. Exemplos incluem String, Object, ArrayList, etc.
+Variáveis de classe (ou estáticas): São variáveis que pertencem à classe em vez de a uma instância específica. Elas são compartilhadas por todas as instâncias da classe.
+
+b. Variáveis primitivas: Armazenam valores diretos na memória e têm um tamanho fixo. Elas são mais eficientes em termos de uso de memória e desempenho.
+Variáveis de referência (ou objetos): Armazenam referências a objetos na memória, permitindo acesso aos métodos e atributos do objeto. Elas são mais flexíveis, pois podem representar objetos de diferentes tipos e podem ser null.
+Variáveis de classe (ou estáticas): São compartilhadas por todas as instâncias da classe e pertencem à classe em si, não a instâncias individuais. Elas são inicializadas uma única vez, quando a classe é carregada, e podem ser acessadas usando o nome da classe.
+
+c. public class VariaveisExemplo {
+    static int variavelDeClasse; // Variável de classe
+
+    int variavelDeObjeto; // Variável de objeto (instância)
+
+    public static void main(String[] args) {
+        VariaveisExemplo objeto1 = new VariaveisExemplo();
+        VariaveisExemplo objeto2 = new VariaveisExemplo();
+
+        objeto1.variavelDeObjeto = 10; 
+        objeto2.variavelDeObjeto = 20; 
+
+        VariaveisExemplo.variavelDeClasse = 100; 
+
+        System.out.println("Variável de objeto do objeto1: " + objeto1.variavelDeObjeto); 
+        System.out.println("Variável de objeto do objeto2: " + objeto2.variavelDeObjeto); 
+        System.out.println("Variável de classe: " + VariaveisExemplo.variavelDeClasse); 
+    }
+}

@@ -1,0 +1,5 @@
+1. O que é o curto circuito em operadores lógicos? Explique.
+
+É quando o lado direito de alguma expressão não precisar ser avaliado porque o resultado final já foi determinado pelo lado esquerdo.
+-Exemplo: boolean x = true || (y > 4)
+->Conclusão do exemplo: Considerando a tabela do OU, o valor de x só pode ser falso se ambos  os lados da expressão forem falsos. Como sabemos que o lado esquerdo é verdadeiro, não há necessidade de avaliar o lado direito.

@@ -1,0 +1,7 @@
+3. Sobre constantes na linguagem Java, faça o que se pede:
+a. Qual palavra-chave é usada para definir uma constante na linguagem Java?
+b. Explique por que as constantes normalmente possuem o modificador static.
+
+a. A palavra-chave usada para definir uma constante na linguagem Java é final. Quando uma variável é declarada com final, seu valor não pode ser alterado depois de inicializado.
+
+b. Normalmente, as constantes são declaradas com o modificador static para que possam ser acessadas sem a necessidade de criar uma instância da classe em que estão definidas. Isso significa que as constantes pertencem à classe em vez de a uma instância específica da classe. Além disso, tornar as constantes static garante que apenas uma cópia delas exista em memória, independentemente do número de instâncias da classe criadas. Isso economiza recursos de memória e facilita o acesso às constantes em todo o código.

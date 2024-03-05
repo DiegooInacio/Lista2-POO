@@ -1,0 +1,5 @@
+2. Qual o impacto do uso dos operadores de incremento (++) e decremento (--) antes ou depois de
+uma variável? Explique. Exemplo: System.out.println(++a) ou System.out.println(a++).
+
+Antes da variável: É avaliado o valor incrementado ou decrementado de uma variável. O valor trabalhado já é o incrementado ou decrementado.
+Depois da variável: É avaliado o valor original, ou seja, o valor trabalhado é o valor original de uma variável. Depois o valor da variável é incrementado ou decrementado.

@@ -1,0 +1,15 @@
+1. Sobre tipos primitivos na linguagem Java, responda o que se pede:
+a. O que são tipos primitivos?
+b. Qual a diferença entre tipos primitivos e objetos?
+c. Pesquise e explique a diferença entre o tipo primitivo int e a classe Integer
+d. Porque os tipos primitivos são mantidos na linguagem Java, uma vez que existem objetos
+que podem realizar este papel?
+
+a. Tipos primitivos em Java são tipos de dados básicos incorporados na linguagem. Eles representam valores simples, como números inteiros, números de ponto flutuante, caracteres, booleanos, etc. Os tipos primitivos são usados para declarar variáveis que armazenam valores diretos na memória.
+
+b. A diferença fundamental entre tipos primitivos e objetos em Java é que os tipos primitivos armazenam valores diretamente na memória, enquanto objetos armazenam uma referência para a localização na memória onde os dados estão armazenados. Além disso, os tipos primitivos têm operações diretamente associadas a eles, enquanto objetos geralmente têm métodos e podem conter mais complexidade.
+
+c. int: É um tipo primitivo que representa números inteiros. Ele possui um tamanho fixo (32 bits) e não pode ser null.
+Integer: É uma classe wrapper (classe de invólucro) que encapsula um valor do tipo primitivo int em um objeto. Ela permite que você realize operações que só podem ser realizadas em objetos, como passagem por referência, e também permite que o valor seja null. Além disso, a classe Integer fornece métodos úteis para trabalhar com valores inteiros, como conversão para e de strings.
+
+d. Os tipos primitivos são mantidos em Java por causa de sua eficiência e simplicidade. Eles ocupam menos espaço em memória e são mais rápidos de manipular do que objetos, pois não exigem alocação de memória adicional. Além disso, os tipos primitivos são usados com frequência em situações onde o desempenho é crítico, como em cálculos matemáticos e operações de baixo nível. Embora os objetos possam ser usados para realizar o mesmo papel, eles introduzem uma sobrecarga de memória e desempenho desnecessária em certos cenários. Portanto, os tipos primitivos são mantidos para oferecer uma opção mais eficiente em tais casos.
